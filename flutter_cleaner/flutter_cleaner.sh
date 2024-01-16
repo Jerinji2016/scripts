@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Replace /path/to/your/folder with the path to the specific folder
+# Replace this path with the path to the specific folder
 FOLDER_PATH="/Users/jerin/Documents/Projects"
 
 # Initialize a counter
