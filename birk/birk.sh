@@ -53,7 +53,11 @@ echo -e "${YELLOW}Selected environment file: $ENV_FILE${NC}"
 # Clean the Flutter build
 flutter clean
 
-# Execute the shorebird command with the selected mode and environment file
-shorebird $MODE android --artifact apk -- --dart-define-from-file=$ENV_FILE
+# Execute the shorebird command based on the selected mode
+if [ "$MODE" == "release" ]; then
+    shorebird release android --artifact apk -- --dart-define-from-file=$ENV_FILE
+else
+    shorebird patch android -- --dart-define-from-file=$ENV_FILE
+fi
 
 echo -e "${GREEN}Build completed for mode: $MODE and environment: $ENV${NC}"
