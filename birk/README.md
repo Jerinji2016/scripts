@@ -10,11 +10,12 @@ Know more about [Shorebird](https://docs.shorebird.dev/)
 
 Or How I use is...
 
-Copy this script and add it to your root folder of Flutter Project with file named as `birk`.
+1. Create a file named `birk` in root of your Flutter project and add the script to the file
+2. Provide executable permission with `chmod +x birk`
 
 > __NOTE:__ If you put a different file name. Use the below command accordingly by replacing `./birk` with `./your-file-name`.
 
-## 💯 Usage
+## 💯 Command Details
 
 `./birk [patch|release] [dev|stage|prod]`
 
